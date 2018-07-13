@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/listitem_cardview_margin" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_height="175dp"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                tools:background="@color/colorPrimaryDark"
+                android:id="@+id/listitem_image" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/listitemName"
+                tools:text="This Is A Title"
+                android:textColor="@color/colorPrimaryText"
+                android:id="@+id/listitem_name_text_view" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/listitemDescription"
+                tools:text="This is a description."
+                android:textColor="@color/colorSecondaryText"
+                android:id="@+id/listitem_description_text_view" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_place"
+                android:drawableTint="@color/colorAccent"
+                style="@style/listitemInfo"
+                tools:text="This is a location"
+                android:id="@+id/listitem_location_text_view" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_local_phone"
+                android:drawableTint="@color/colorAccent"
+                style="@style/listitemInfo"
+                tools:text="This is a phone number"
+                android:id="@+id/listitem_phone_text_view" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_watch_later"
+                android:drawableTint="@color/colorAccent"
+                style="@style/listitemInfo"
+                tools:text="These are the opening/closing hours"
+                android:id="@+id/listitem_hours_text_view" />
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
